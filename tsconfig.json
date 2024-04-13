@@ -13,7 +13,14 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "paths": {
+      "@": ["./src/*"],
+      "@assets": ["./src/assets/index"],
+      "@components": ["./src/components/index"],
+      "@pages": ["./src/pages/index"],
+      "@utils": ["./src/utils/index"]
+    }
   },
   "include": ["src"],
   "exclude": ["node_modules"]
