@@ -1,7 +1,10 @@
+import { HeroSection, Navbar } from "@components";
+
 const Landing: React.FC = () => {
   return (
-    <div className="pt-[5rem] transition ease-in">
-      <h1>Testing</h1>
+    <div className="">
+      <Navbar />
+      <HeroSection />
     </div>
   );
 };
