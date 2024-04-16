@@ -28,6 +28,7 @@ const AboutSection: React.FC = () => {
           </div>
         ))}
       </div>
+      <hr className="w-3/4 mt-10 text-white" />
     </section>
   );
 };
