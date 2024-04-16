@@ -18,12 +18,12 @@ const AboutSection: React.FC = () => {
   ];
 
   return (
-    <section className="pt-10 max-w-7xl flex flex-col justify-center items-center bg-slate-400">
-      <h1 className="">Why choose us</h1>
-      <div className="flex">
+    <section className="py-20 flex flex-col justify-center items-center ]">
+      <h1 className="text-4xl text-white">Why choose us</h1>
+      <div className="flex mt-10 text-white max-w-7xl gap-10">
         {chooseUs.map((content, i) => (
-          <div className="flex flex-col" key={i}>
-            <h1>{content.title}</h1>
+          <div className="flex flex-col gap-5 text-center w-1/3" key={i}>
+            <h2 className="text-xl">{content.title}</h2>
             <p>{content.content}</p>
           </div>
         ))}
