@@ -2,7 +2,7 @@ import { HeroImage } from "@assets";
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="stacked w-screen h-screen flex justify-center items-center bg-slate-400">
+    <section className="stacked w-screen h-screen flex justify-center items-center">
       <img className="block w-full h-screen object-cover" src={HeroImage} />
       <div className="absolute w-screen h-screen bg-black opacity-70" />
       <div className="absolute flex flex-col items-center gap-5 text-white">
