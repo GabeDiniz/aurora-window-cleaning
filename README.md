@@ -1,6 +1,5 @@
-# React + TypeScript + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🧾 Aurora Window Cleaning - Business Website
+This is a business website built using Vite js and Tailwind CSS. 
 
 Currently, two official plugins are available:
 
