@@ -1,4 +1,4 @@
-🧾 Aurora Window Cleaning - Business Website
+# 🧾 Aurora Window Cleaning - Business Website
 This is a business website built using Vite js and Tailwind CSS. 
 
 Currently, two official plugins are available:
