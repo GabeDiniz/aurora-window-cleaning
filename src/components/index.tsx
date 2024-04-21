@@ -4,13 +4,20 @@
  *
  */
 export { Navbar } from "./Navbar";
+export { Footer } from "./Footer";
 
 /*
  *
- * @sections
+ * Home @sections
  *
  */
-export { HeroSection } from "./Hero.section";
-export { AboutSection } from "./About.section";
-export { BookingSection } from "./Booking.section";
-export { FooterSection } from "./Footer.section";
+export { HeroSection } from "./sections/home/Hero.section";
+export { AboutSection } from "./sections/home/About.section";
+export { BookingSection } from "./sections/home/Booking.section";
+
+/*
+ *
+ * Home @sections
+ *
+ */
+export { OurTeamHero } from "./sections/our-team/Hero.section";

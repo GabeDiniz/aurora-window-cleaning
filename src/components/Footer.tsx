@@ -1,4 +1,4 @@
-const FooterSection: React.FC = () => {
+const Footer: React.FC = () => {
   return (
     <section className="py-20 flex flex-col justify-center bg-white">
       <h1 className="text-4xl text-center">Socials Here.</h1>
@@ -7,4 +7,4 @@ const FooterSection: React.FC = () => {
   );
 };
 
-export { FooterSection };
+export { Footer };

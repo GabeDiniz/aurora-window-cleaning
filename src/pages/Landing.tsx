@@ -1,7 +1,7 @@
 import {
   AboutSection,
   BookingSection,
-  FooterSection,
+  Footer,
   HeroSection,
   Navbar,
 } from "@components";
@@ -13,7 +13,7 @@ const Landing: React.FC = () => {
       <HeroSection />
       <AboutSection />
       <BookingSection />
-      <FooterSection />
+      <Footer />
     </div>
   );
 };
