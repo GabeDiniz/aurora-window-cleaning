@@ -2,18 +2,22 @@ import { HeroImage } from "@assets";
 
 const OurTeamHero: React.FC = () => {
   return (
-    <section className="stacked w-screen h-screen flex justify-center items-center">
-      <img className="block w-full h-screen object-cover" src={HeroImage} />
-      <div className="absolute w-screen h-screen bg-black opacity-70" />
-      <div className="absolute flex flex-col items-center gap-5 text-white">
-        <h2 className="text-3xl uppercase animatecss animatecss-backInDown">
-          Meet Our Team
-        </h2>
-        <h1 className="text-7xl uppercase text-center">
-          StudentWorks Cleaning
-        </h1>
-
-        <button>Contact Us</button>
+    <section className="relative w-screen h-2/3 flex justify-start items-center">
+      <img
+        className="absolute w-full h-full object-cover"
+        src={HeroImage}
+        alt="Hero"
+      />
+      <div className="absolute w-full h-full bg-black bg-opacity-70" />
+      <div className="z-10 flex flex-col gap-5 text-white px-10">
+        <h1 className="text-7xl uppercase">Meet our Team</h1>
+        <p className="max-w-2xl">
+          Welcome to Aurora Student Window Cleaning! We are a hardworking and
+          dedicated team of students operating in Aurora. Your satisfaction is
+          our number one priority. From start to finish we want to ensure that
+          we provide you with professional, thorough service. Thank you for
+          supporting us!
+        </p>
       </div>
     </section>
   );
