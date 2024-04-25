@@ -21,3 +21,4 @@ export { BookingSection } from "./sections/home/Booking.section";
  *
  */
 export { OurTeamHero } from "./sections/our-team/Hero.section";
+export { TeamSection } from "./sections/our-team/Team.section";
