@@ -7,8 +7,6 @@ const OurTeam: React.FC = () => {
       <OurTeamHero />
       <TeamSection />
       <Footer />
-      <Footer />
-      <Footer />
     </div>
   );
 };
