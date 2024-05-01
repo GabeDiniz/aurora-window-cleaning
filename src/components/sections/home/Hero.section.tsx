@@ -13,7 +13,7 @@ const HeroSection: React.FC = () => {
           StudentWorks Cleaning
         </h1>
 
-        <button>Contact Us</button>
+        <button className="border-white">Contact Us</button>
       </div>
     </section>
   );
