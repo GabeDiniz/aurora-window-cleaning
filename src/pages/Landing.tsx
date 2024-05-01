@@ -8,7 +8,7 @@ import {
 
 const Landing: React.FC = () => {
   return (
-    <div className="bg-slate-900">
+    <div className="bg-laceWhite">
       <Navbar />
       <HeroSection />
       <AboutSection />
