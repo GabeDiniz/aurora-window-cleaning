@@ -2,8 +2,8 @@ import { HeroImage } from "@assets";
 
 const TeamSection: React.FC = () => {
   return (
-    <section className="relative w-screen py-20 px-16 flex flex-col gap-20 justify-start items-center text-black bg-laceWhite">
-      <div className="flex gap-10">
+    <section className="relative w-screen py-20 px-16 flex flex-col gap-20 justify-start items-center text-white bg-slate-900">
+      <div className="flex gap-10 max-w-5xl">
         <img
           className="w-1/3 object-cover rounded-lg"
           src={HeroImage}
@@ -18,7 +18,7 @@ const TeamSection: React.FC = () => {
           </p>
         </div>
       </div>
-      <div className="flex gap-10">
+      <div className="flex gap-10 max-w-5xl">
         <div className="m-2">
           <h1 className="text-4xl">Student Works</h1>
           <p>
@@ -37,7 +37,7 @@ const TeamSection: React.FC = () => {
           alt="Hero"
         />
       </div>
-      <div className="flex gap-10">
+      <div className="flex gap-10 max-w-5xl">
         <img
           className="w-1/3 object-cover rounded-lg"
           src={HeroImage}
