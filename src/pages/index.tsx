@@ -11,3 +11,10 @@ export { Landing } from "./Landing";
  *
  */
 export { OurTeam } from "./OurTeam";
+
+/*
+ *
+ * @page OurTeam
+ *
+ */
+export { Services } from "./Services";
