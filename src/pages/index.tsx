@@ -17,4 +17,4 @@ export { OurTeam } from "./OurTeam";
  * @page OurTeam
  *
  */
-export { Services } from "./Services";
+export { OurServices } from "./OurServices";

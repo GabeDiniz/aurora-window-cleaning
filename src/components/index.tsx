@@ -29,3 +29,4 @@ export { TeamSection } from "./sections/our-team/Team.section";
  *
  */
 export { ServicesHero } from "./sections/services/Hero.section";
+export { Services } from "./sections/services/Services.section";
