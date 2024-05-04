@@ -5,7 +5,7 @@ const servicesData = [
     title: "Window Cleaning",
     data: [
       {
-        image: HeroImage,
+        banner: HeroImage,
         subtitle: "Exterior cleaning",
         subtext:
           "All of our window cleaning is done by hand. Exterior cleaning includes the complete cleaning of all window panes, frames, and sills. ",
@@ -16,7 +16,7 @@ const servicesData = [
     title: "Eavestrough Cleaning",
     data: [
       {
-        image: HeroImage,
+        banner: HeroImage,
         subtitle: "Exterior cleaning",
         subtext:
           "All of our window cleaning is done by hand. Exterior cleaning includes the complete cleaning of all window panes, frames, and sills. ",
@@ -27,7 +27,7 @@ const servicesData = [
     title: "Pressure Washing",
     data: [
       {
-        image: HeroImage,
+        banner: HeroImage,
         subtitle: "Exterior cleaning",
         subtext:
           "All of our window cleaning is done by hand. Exterior cleaning includes the complete cleaning of all window panes, frames, and sills. ",
@@ -38,7 +38,7 @@ const servicesData = [
     title: "Polymeric Sand & Sealing",
     data: [
       {
-        image: HeroImage,
+        banner: HeroImage,
         subtitle: "Exterior cleaning",
         subtext:
           "All of our window cleaning is done by hand. Exterior cleaning includes the complete cleaning of all window panes, frames, and sills. ",
