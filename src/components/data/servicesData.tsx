@@ -10,6 +10,18 @@ const servicesData = [
         subtext:
           "All of our window cleaning is done by hand. Exterior cleaning includes the complete cleaning of all window panes, frames, and sills. ",
       },
+      {
+        banner: HeroImage,
+        subtitle: "Interior cleaning",
+        subtext:
+          "All of our window cleaning is done by hand. Exterior cleaning includes the complete cleaning of all window panes, frames, and sills. ",
+      },
+      {
+        banner: HeroImage,
+        subtitle: "Rain-X",
+        subtext:
+          "All of our window cleaning is done by hand. Exterior cleaning includes the complete cleaning of all window panes, frames, and sills. ",
+      },
     ],
   },
   {
