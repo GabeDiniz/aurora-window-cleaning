@@ -4,12 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+h1 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-variant-numeric: lining-nums;
   font-feature-settings: "lnum" 1;
   font-weight: 500;
-  background-color: #fdddb7;
 }
 
 @layer base {
