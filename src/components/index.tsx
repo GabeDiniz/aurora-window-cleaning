@@ -17,7 +17,7 @@ export { BookingSection } from "./sections/home/Booking.section";
 
 /*
  *
- * Home @sections
+ * OurTeam @sections
  *
  */
 export { OurTeamHero } from "./sections/our-team/Hero.section";
@@ -25,7 +25,7 @@ export { TeamSection } from "./sections/our-team/Team.section";
 
 /*
  *
- * Home @sections
+ * Services @sections
  *
  */
 export { ServicesHero } from "./sections/services/Hero.section";
@@ -33,7 +33,7 @@ export { Services } from "./sections/services/Services.section";
 
 /*
  *
- * Home @sections
+ * Reviews @sections
  *
  */
 export { ReviewsHero } from "./sections/reviews/Hero.section";
