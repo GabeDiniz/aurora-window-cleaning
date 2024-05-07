@@ -14,7 +14,14 @@ export { OurTeam } from "./OurTeam";
 
 /*
  *
- * @page OurTeam
+ * @page OurServices
  *
  */
 export { OurServices } from "./OurServices";
+
+/*
+ *
+ * @page Reviews
+ *
+ */
+export { Reviews } from "./Reviews";

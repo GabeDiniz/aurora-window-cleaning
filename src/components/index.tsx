@@ -30,3 +30,10 @@ export { TeamSection } from "./sections/our-team/Team.section";
  */
 export { ServicesHero } from "./sections/services/Hero.section";
 export { Services } from "./sections/services/Services.section";
+
+/*
+ *
+ * Home @sections
+ *
+ */
+export { ReviewsHero } from "./sections/reviews/Hero.section";

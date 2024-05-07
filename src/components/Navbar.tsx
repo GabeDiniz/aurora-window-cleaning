@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
       <div className="uppercase flex gap-10 font-thin">
         <Link to="/our-team">Our Team</Link>
         <Link to="/services">Services</Link>
-        <Link to="/">Reviews</Link>
+        <Link to="/reviews">Reviews</Link>
         <Link to="/">Free Estimate</Link>
         <Link to="/">Job Opportunities</Link>
       </div>
