@@ -16,7 +16,7 @@ const Services: React.FC = () => {
                   return (
                     <div className="flex flex-col justify-center gap-3">
                       <img src={item.banner} className="w-full rounded-md" />
-                      <h2 className="text-base">{item.subtitle}</h2>
+                      <h2 className="text-base font-bold">{item.subtitle}</h2>
                       <p className="text-sm font-thin">{item.subtext}</p>
                     </div>
                   );
