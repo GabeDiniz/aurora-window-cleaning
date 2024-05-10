@@ -6,5 +6,5 @@ const Footer: React.FC = () => {
     </footer>
   );
 };
-
+//  https://www.facebook.com/share/sHBNDYdLpXJx83SV/?mibextid=LQQJ4d
 export { Footer };
