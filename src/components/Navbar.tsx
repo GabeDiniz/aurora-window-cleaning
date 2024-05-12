@@ -11,7 +11,6 @@ const Navbar: React.FC = () => {
         <Link to="/services">Services</Link>
         <Link to="/reviews">Reviews</Link>
         <Link to="/">Free Estimate</Link>
-        <Link to="/">Job Opportunities</Link>
       </div>
     </section>
   );
