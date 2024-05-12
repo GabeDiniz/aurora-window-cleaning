@@ -12,9 +12,14 @@ const TeamSection: React.FC = () => {
         <div className="m-2">
           <h1 className="text-4xl">Eric Faro</h1>
           <p>
-            Hi, my name is, what? My name is, who? My name is, chka-chka, Slim
-            Shady Hi, my name is, huh? My name is, what? My name is, chka-chka,
-            Slim Shady
+            Hi, my name is Eric, and I am the owner of Newmarket Student Window
+            Cleaning. I graduated with a Mechanical Engineering degree from
+            Western University. I was born in Brazil and moved here when I was
+            3. In 2021 I worked as a Window Cleaner for Student Works, which
+            allowed me to develop in-depth knowledge about all of our services.
+            The year after, I took on a new role as a Production Manager, and
+            sold over $200,000 worth of work for 350+ happy homeowners. I am now
+            running my own home maintenance business for the third year!
           </p>
         </div>
       </div>
@@ -44,7 +49,7 @@ const TeamSection: React.FC = () => {
           alt="Hero"
         />
         <div className="m-2">
-          <h1 className="text-4xl">Multiple Sclerosis</h1>
+          <h1 className="text-4xl">Multiple Sclerosis (MS Canada)</h1>
           <p>
             Canada has one of the highest rates of Multiple Sclerosis (MS) in
             the world. Approximately 90000 Canadians are living with MS. That is
