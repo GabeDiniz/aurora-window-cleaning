@@ -1,5 +1,12 @@
 /*
  *
+ * @page ErrorPage
+ *
+ */
+export { ErrorPage } from "./404Error";
+
+/*
+ *
  * @page Landing
  *
  */
