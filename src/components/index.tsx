@@ -37,3 +37,10 @@ export { Services } from "./sections/services/Services.section";
  *
  */
 export { ReviewsHero } from "./sections/reviews/Hero.section";
+
+/*
+ *
+ * Free-Estimate @sections
+ *
+ */
+export { EstimateForm } from "./sections/estimate-form/Estimate.form";

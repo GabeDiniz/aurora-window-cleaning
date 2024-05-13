@@ -32,3 +32,10 @@ export { OurServices } from "./OurServices";
  *
  */
 export { Reviews } from "./Reviews";
+
+/*
+ *
+ * @page FreeEstimate
+ *
+ */
+export { FreeEstimate } from "./FreeEstimate";
