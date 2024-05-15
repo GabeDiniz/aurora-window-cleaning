@@ -1,4 +1,5 @@
 import { HeroImage } from "@assets";
+import { Link } from "react-router-dom";
 
 const BookingSection: React.FC = () => {
   return (
@@ -9,7 +10,9 @@ const BookingSection: React.FC = () => {
           Schedule an estimate at your convenience. We look forward to meeting
           with you!
         </p>
-        <button className="max-w-64">Book estimate</button>
+        <Link to="/free-estimate">
+          <button className="max-w-64">Book estimate</button>
+        </Link>
       </div>
       <img className="w-1/3 lg:w-1/4 object-cover rounded-lg" src={HeroImage} />
     </section>
