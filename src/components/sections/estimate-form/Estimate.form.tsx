@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import Select from "react-select";
+import React, { useRef, useState } from "react";
+import Select, { SelectInstance } from "react-select";
 import makeAnimated from "react-select/animated";
 
 interface FormData {
@@ -14,7 +14,12 @@ interface FormData {
   services: string[];
 }
 
-const options = [
+interface Option {
+  value: string;
+  label: string;
+}
+
+const options: Option[] = [
   { value: "Window cleaning", label: "Window cleaning" },
   { value: "Eavestrough cleaning", label: "Eavestrough cleaning" },
   { value: "Gutter Guard Installation", label: "Gutter Guard Installation" },
@@ -34,31 +39,31 @@ const EstimateForm: React.FC = () => {
     postalCode: "",
     phoneNumber: "",
     email: "",
-    services: [],
+    services: [] as string[],
   });
 
-  // Function to update state on input change
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
-  ) => {
-    const { name, value } = e.target;
-    if (name === "services") {
-      // Handle multi-select for services
-      const selectedOptions = Array.from(
-        (e.target as HTMLSelectElement).selectedOptions,
-        (option) => option.value
-      );
-      setFormData((prev) => ({ ...prev, [name]: selectedOptions }));
-    } else {
-      setFormData((prev) => ({ ...prev, [name]: value }));
-    }
-  };
+  const selectRef = useRef<SelectInstance<Option>>(null);
 
-  // Function to handle form submission
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Submitted Data:", formData);
-    // Here you can add what to do after form submission, e.g., sending data to a server
+    console.log(selectRef);
+    const selectedServices = selectRef.current?.state.selectValue as {
+      value: string;
+      label: string;
+    }[];
+    const serviceValues = selectedServices.map((s) => s.value);
+
+    const finalFormData = {
+      ...formData,
+      services: serviceValues,
+    };
+
+    console.log("Submitted Data:", finalFormData);
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   return (
@@ -140,6 +145,7 @@ const EstimateForm: React.FC = () => {
           options={options}
           isMulti
           components={animatedComponents}
+          ref={selectRef}
         />
         <button type="submit" className="btn">
           Send
