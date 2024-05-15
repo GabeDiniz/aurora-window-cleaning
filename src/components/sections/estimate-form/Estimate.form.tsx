@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Select from "react-select";
+import makeAnimated from "react-select/animated";
 
 interface FormData {
   firstName: string;
@@ -11,6 +13,15 @@ interface FormData {
   email: string;
   services: string[];
 }
+
+const options = [
+  { value: "Window cleaning", label: "Window cleaning" },
+  { value: "Eavestrough cleaning", label: "Eavestrough cleaning" },
+  { value: "Gutter Guard Installation", label: "Gutter Guard Installation" },
+  { value: "Pressure Washing", label: "Pressure Washing" },
+];
+
+const animatedComponents = makeAnimated();
 
 const EstimateForm: React.FC = () => {
   // State to handle form data
@@ -123,22 +134,13 @@ const EstimateForm: React.FC = () => {
             className="input"
           />
         </div>
-        <ul>
-          <select
-            multiple={true}
-            name="services"
-            required
-            onChange={handleChange}
-            className="input"
-          >
-            <option value="Window cleaning">Window cleaning</option>
-            <option value="Eavestrough cleaning">Eavestrough cleaning</option>
-            <option value="Gutter Guard Installation">
-              Gutter Guard Installation
-            </option>
-            <option value="Pressure Washing">Pressure Washing</option>
-          </select>
-        </ul>
+        <Select
+          className=""
+          name="service"
+          options={options}
+          isMulti
+          components={animatedComponents}
+        />
         <button type="submit" className="btn">
           Send
         </button>
