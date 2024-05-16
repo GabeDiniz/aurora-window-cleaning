@@ -17,6 +17,6 @@ h1 {
   }
 
   input {
-    @apply px-2 py-1 rounded-sm border-gray-400 border focus:border-blue-400;
+    @apply px-2 py-1 rounded-sm border-gray-400 border focus:outline-blue-500;
   }
 }

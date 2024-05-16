@@ -43,4 +43,5 @@ export { ReviewsHero } from "./sections/reviews/Hero.section";
  * Free-Estimate @sections
  *
  */
+export { EstimateHeader } from "./sections/estimate-form/Header.section";
 export { EstimateForm } from "./sections/estimate-form/Estimate.form";
