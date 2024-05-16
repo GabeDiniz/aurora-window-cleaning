@@ -69,14 +69,15 @@ const EstimateForm: React.FC = () => {
   return (
     <section className="py-20 flex flex-col justify-center items-center">
       <form onSubmit={handleSubmit} className="space-y-4">
-        <div>
+        <h2>Name</h2>
+        <div className="flex gap-3">
           <input
             type="text"
             name="firstName"
             placeholder="First Name"
             required
             onChange={handleChange}
-            className="input"
+            className="inputClass"
           />
           <input
             type="text"
@@ -84,17 +85,18 @@ const EstimateForm: React.FC = () => {
             placeholder="Last Name"
             required
             onChange={handleChange}
-            className="input"
+            className="inputClass"
           />
         </div>
-        <div>
+        <h2>Address</h2>
+        <div className="flex gap-3">
           <input
             type="text"
             name="addressLine1"
             placeholder="Address Line 1"
             required
             onChange={handleChange}
-            className="input"
+            className="inputClass"
           />
           <input
             type="text"
@@ -102,7 +104,7 @@ const EstimateForm: React.FC = () => {
             placeholder="City"
             required
             onChange={handleChange}
-            className="input"
+            className="inputClass"
           />
           <input
             type="text"
@@ -110,7 +112,7 @@ const EstimateForm: React.FC = () => {
             placeholder="Province"
             required
             onChange={handleChange}
-            className="input"
+            className="inputClass"
           />
           <input
             type="text"
@@ -118,17 +120,18 @@ const EstimateForm: React.FC = () => {
             placeholder="Postal Code"
             required
             onChange={handleChange}
-            className="input"
+            className="inputClass"
           />
         </div>
-        <div>
+        <h2>Personal Information</h2>
+        <div className="flex gap-3">
           <input
             type="tel"
             name="phoneNumber"
             placeholder="Phone Number"
             required
             onChange={handleChange}
-            className="input"
+            className="inputClass"
           />
           <input
             type="email"
@@ -136,9 +139,10 @@ const EstimateForm: React.FC = () => {
             placeholder="Email"
             required
             onChange={handleChange}
-            className="input"
+            className="inputClass"
           />
         </div>
+        <h2>Services</h2>
         <Select
           className=""
           name="service"
