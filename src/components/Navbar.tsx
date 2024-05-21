@@ -1,16 +1,42 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { FaXmark } from "react-icons/fa6";
 
 const Navbar: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <section className="fixed px-10 py-5 z-10 w-full flex justify-between text-lg text-white">
+    <section className="z-20 fixed px-10 py-5 w-full flex justify-between items-center text-lg text-white">
       <Link to="/" className="">
         StudentWorks
       </Link>
-      <div className="uppercase flex gap-10 font-thin">
-        <Link to="/our-team">Our Team</Link>
-        <Link to="/services">Services</Link>
-        <Link to="/reviews">Reviews</Link>
-        <Link to="/free-estimate">Free Estimate</Link>
+      <div className="z-10 md:hidden">
+        <div onClick={toggleMenu}>
+          {isOpen ? <FaXmark size={24} /> : <GiHamburgerMenu size={24} />}
+        </div>
+      </div>
+      <div
+        className={`uppercase animatecss flex gap-10 font-thin md:flex ${
+          isOpen ? "flex animatecss-fadeIn" : "hidden"
+        } flex-col md:flex-row fixed md:static top-0 right-0 pt-20 pl-16 pr-10 h-full md:h-auto text-right w-fit md:w-auto bg-slate-900 bg-opacity-95 md:bg-transparent p-5 md:p-0`}
+      >
+        <Link to="/our-team" className="py-2 md:py-0">
+          Our Team
+        </Link>
+        <Link to="/services" className="py-2 md:py-0">
+          Services
+        </Link>
+        <Link to="/reviews" className="py-2 md:py-0">
+          Reviews
+        </Link>
+        <Link to="/free-estimate" className="py-2 md:py-0">
+          Free Estimate
+        </Link>
       </div>
     </section>
   );
