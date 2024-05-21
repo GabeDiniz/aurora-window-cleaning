@@ -6,10 +6,10 @@ const HeroSection: React.FC = () => {
       <img className="block w-full h-screen object-cover" src={HeroImage} />
       <div className="absolute w-screen h-screen bg-black opacity-70" />
       <div className="absolute flex flex-col items-center gap-5 text-white">
-        <h2 className="text-3xl uppercase animatecss animatecss-backInDown">
+        <h2 className="text-lg sm:text-2xl md:text-3xl uppercase animatecss animatecss-backInDown">
           Serving Aurora
         </h2>
-        <h1 className="text-7xl uppercase text-center animatecss animatecss-zoomIn">
+        <h1 className="text-3xl sm:text-5xl md:text-7xl px-3 uppercase text-center animatecss animatecss-zoomIn">
           StudentWorks Cleaning
         </h1>
 
