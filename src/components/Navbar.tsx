@@ -15,14 +15,16 @@ const Navbar: React.FC = () => {
       <Link to="/" className="hover:scale-110 transition-all duration-100">
         StudentWorks
       </Link>
-      <div className="z-10 md:hidden">
+      <div className="z-10 md:hidden hover:cursor-pointer">
         <div onClick={toggleMenu}>
           {isOpen ? <FaXmark size={24} /> : <GiHamburgerMenu size={24} />}
         </div>
       </div>
       <div
         className={`uppercase animatecss flex gap-10 font-thin md:flex ${
-          isOpen ? "flex animatecss-fadeIn" : "hidden"
+          isOpen
+            ? "flex animatecss-fadeInRightBig"
+            : " animatecss-fadeOutRightBig"
         } flex-col md:flex-row fixed md:static top-0 right-0 pt-20 pl-16 pr-10 h-full md:h-auto text-right w-fit md:w-auto bg-slate-900 bg-opacity-95 md:bg-transparent p-5 md:p-0`}
       >
         <Link
