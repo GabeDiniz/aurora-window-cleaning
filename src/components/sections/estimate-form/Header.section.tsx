@@ -2,7 +2,7 @@ import { HeroImage } from "@assets";
 
 const EstimateHeader: React.FC = () => {
   return (
-    <section className="relative w-screen h-2/3 flex justify-center items-center">
+    <section className="relative h-2/3 flex justify-center items-center">
       <img
         className="absolute w-full h-full object-cover"
         src={HeroImage}

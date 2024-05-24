@@ -3,7 +3,7 @@ import { servicesData } from "@data";
 
 const Services: React.FC = () => {
   return (
-    <section className="relative w-screen bg-laceWhite">
+    <section className="relative bg-laceWhite">
       <div className="py-10">
         {/* MAP ALL SERVICES */}
         {servicesData.map((product) => {

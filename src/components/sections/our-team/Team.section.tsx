@@ -2,7 +2,7 @@ import { HeroImage } from "@assets";
 
 const TeamSection: React.FC = () => {
   return (
-    <section className="relative w-screen py-20 px-16 flex flex-col gap-20 justify-start items-center bg-laceWhite text-black">
+    <section className="relative py-20 px-16 flex flex-col gap-20 justify-start items-center bg-laceWhite text-black">
       <div className="flex gap-10 max-w-5xl">
         <img
           className="w-1/3 object-cover rounded-lg"

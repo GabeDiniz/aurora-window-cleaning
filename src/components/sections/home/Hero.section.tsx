@@ -2,9 +2,9 @@ import { HeroImage } from "@assets";
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="stacked w-screen h-screen flex justify-center items-center">
+    <section className="stacked h-screen flex justify-center items-center">
       <img className="block w-full h-screen object-cover" src={HeroImage} />
-      <div className="absolute w-screen h-screen bg-black opacity-70" />
+      <div className="absolute w-full h-screen bg-black opacity-70" />
       <div className="absolute flex flex-col items-center gap-5 text-white">
         <h2 className="text-lg sm:text-2xl md:text-3xl uppercase animatecss animatecss-backInDown">
           Serving Aurora
