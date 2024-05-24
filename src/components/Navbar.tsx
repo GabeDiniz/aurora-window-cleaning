@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
           isOpen
             ? "flex animatecss-fadeInRightBig"
             : "animatecss-fadeOutRightBig md:animate-none"
-        } flex-col md:flex-row fixed md:static top-0 right-0 pt-20 pl-16 pr-10 h-full md:h-auto text-right w-fit md:w-auto bg-slate-900 bg-opacity-95 md:bg-transparent p-5 md:p-0`}
+        } flex-col md:flex-row fixed md:static top-0 right-0 pt-20 pl-16 pr-10 h-full md:h-auto text-right w-fit md:w-auto bg-classicBlue bg-opacity-95 md:bg-transparent p-5 md:p-0`}
       >
         <Link
           to="/our-team"

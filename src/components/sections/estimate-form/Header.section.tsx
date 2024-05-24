@@ -1,6 +1,6 @@
 const EstimateHeader: React.FC = () => {
   return (
-    <section className="relative bg-slate-900 text-white pt-20 pb-14 pl-10 w-screen">
+    <section className="relative bg-classicBlue text-white pt-20 pb-14 pl-10 w-screen">
       <div className="max-w-2xl flex flex-col gap-3">
         <h1 className="text-2xl">Book your free estimate!</h1>
         <p>

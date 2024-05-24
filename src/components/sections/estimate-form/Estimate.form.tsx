@@ -67,8 +67,8 @@ const EstimateForm: React.FC = () => {
   };
 
   return (
-    <section className="py-20 flex flex-col justify-center items-center">
-      <form onSubmit={handleSubmit} className="space-y-4">
+    <section className="py-20 flex flex-col justify-center ">
+      <form onSubmit={handleSubmit} className="space-y-4 w-fit pl-10">
         <h2>Name</h2>
         <div className="flex gap-3">
           <input
