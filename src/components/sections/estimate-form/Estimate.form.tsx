@@ -67,9 +67,14 @@ const EstimateForm: React.FC = () => {
   };
 
   return (
-    <section className="py-20 flex flex-col justify-center ">
-      <form onSubmit={handleSubmit} className="space-y-4 w-fit pl-10">
-        <h2>Name</h2>
+    <section className="py-20 flex flex-col items-center">
+      <form
+        onSubmit={handleSubmit}
+        className="bg-offLaceWhite space-y-4 w-fit p-10 rounded-lg"
+      >
+        <h1 className="text-xl">
+          Enter your information to schedule an estimate
+        </h1>
         <div className="flex gap-3">
           <input
             type="text"
@@ -88,12 +93,11 @@ const EstimateForm: React.FC = () => {
             className="inputClass"
           />
         </div>
-        <h2>Address</h2>
         <div className="flex gap-3">
           <input
             type="text"
-            name="addressLine1"
-            placeholder="Address Line 1"
+            name="address"
+            placeholder="Address"
             required
             onChange={handleChange}
             className="inputClass"
@@ -123,7 +127,6 @@ const EstimateForm: React.FC = () => {
             className="inputClass"
           />
         </div>
-        <h2>Personal Information</h2>
         <div className="flex gap-3">
           <input
             type="tel"
@@ -142,7 +145,6 @@ const EstimateForm: React.FC = () => {
             className="inputClass"
           />
         </div>
-        <h2>Services</h2>
         <Select
           className=""
           name="service"

@@ -7,6 +7,7 @@ export default {
     extend: {
       colors: {
         laceWhite: "#F5F5EF",
+        offLaceWhite: "#fcfcfa",
         classicBlue: "#013A81",
       },
     },

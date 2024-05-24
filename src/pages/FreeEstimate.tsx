@@ -2,7 +2,7 @@ import { Navbar, Footer, EstimateForm, EstimateHeader } from "@components";
 
 const FreeEstimate: React.FC = () => {
   return (
-    <div className="bg-laceWhite">
+    <div className="h-screen bg-laceWhite">
       <Navbar />
       <EstimateHeader />
       <EstimateForm />
