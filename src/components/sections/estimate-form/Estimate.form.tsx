@@ -67,10 +67,12 @@ const EstimateForm: React.FC = () => {
   };
 
   return (
-    <section className="py-20 flex flex-col items-center">
+    <section className="relative">
+      {/* Background to fill to space out Footer */}
+      <div className="bg-classicBlue h-52" />
       <form
         onSubmit={handleSubmit}
-        className="bg-offLaceWhite space-y-4 w-fit p-10 rounded-lg"
+        className="bg-offLaceWhite space-y-4 w-fit p-10 rounded-lg absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
       >
         <h1 className="text-xl">
           Enter your information to schedule an estimate
