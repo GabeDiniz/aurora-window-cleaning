@@ -9,7 +9,7 @@ const HeroSection: React.FC = () => {
         <h2 className="text-lg sm:text-2xl md:text-3xl uppercase animatecss animatecss-backInDown">
           Serving Aurora
         </h2>
-        <h1 className="text-4xl sm:text-5xl md:text-7xl px-3 uppercase text-center animatecss animatecss-zoomIn">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl px-3 uppercase font-bold text-center animatecss animatecss-zoomIn">
           StudentWorks Cleaning
         </h1>
 

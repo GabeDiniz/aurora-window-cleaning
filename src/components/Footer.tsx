@@ -3,11 +3,12 @@ import { AiFillFacebook } from "react-icons/ai";
 const Footer: React.FC = () => {
   return (
     <footer className="py-10 pl-10 flex flex-col gap-2 justify-center items-center bg-classicBlue text-laceWhite">
-      <h1 className="text-4xl ">Get in touch</h1>
+      <h1 className="text-4xl uppercase">Get in touch</h1>
       <p className="text-base ">efaro@hotmail.com</p>
       <a
         href="https://www.facebook.com/share/sHBNDYdLpXJx83SV/?mibextid=LQQJ4d"
-        className=" text-4xl"
+        target="_blank"
+        className="text-4xl hover:scale-125 transition-all"
       >
         <AiFillFacebook />
       </a>
