@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
         </div>
       </div>
       <div
-        className={`uppercase animatecss flex gap-10 font-thin md:flex ${
+        className={`uppercase animatecss flex gap-10 font-subtitle md:flex ${
           isOpen
             ? "flex animatecss-fadeInRightBig"
             : "animatecss-fadeOutRightBig md:animate-none"

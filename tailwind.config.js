@@ -2,7 +2,7 @@ export default {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     fontFamily: {
-      thin: ["monospace"],
+      subtitle: "Helvetica, Arial, sans-serif"
     },
     extend: {
       colors: {
