@@ -9,7 +9,7 @@ const OurTeamHero: React.FC = () => {
         alt="Hero"
       />
       <div className="absolute w-full h-full bg-black bg-opacity-70" />
-      <div className="z-10 flex flex-col gap-5 text-white w-full max-w-5xl">
+      <div className="z-10 flex flex-col gap-5 text-white w-full max-w-5xl pl-12">
         <h1 className="text-7xl uppercase animatecss animatecss-bounce">
           Meet our Team
         </h1>
