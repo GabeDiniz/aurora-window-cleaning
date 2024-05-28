@@ -6,7 +6,7 @@ const AboutSection: React.FC = () => {
         "We have $5 Million in Liability insurance and WSIB coverage. All of our employees have also completed a full safety training program.",
     },
     {
-      title: "100% Customer Satisfaction Process",
+      title: "100% Customer Satisfaction",
       content:
         "We complete a thorough walkaround with each client to ensure you are 100% satisfied with the work done on your home.",
     },
@@ -23,7 +23,7 @@ const AboutSection: React.FC = () => {
       <div className="flex flex-col sm:flex-row items-center mt-10 text-black max-w-7xl gap-10 px-8 md:px-20">
         {chooseUs.map((content, i) => (
           <div className="flex flex-col gap-5 text-center md:w-1/3" key={i}>
-            <h2 className="text-xl">{content.title}</h2>
+            <h2 className="text-xl font-bold">{content.title}</h2>
             <p>{content.content}</p>
           </div>
         ))}
