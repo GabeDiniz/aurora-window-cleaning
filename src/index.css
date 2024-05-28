@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 h1 {
-  font-family: "Poetsen One", sans-serif;
-  font-weight: 400;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 200;
   font-style: normal;
 }
 
@@ -16,6 +17,6 @@ h1 {
   }
 
   input {
-    @apply px-2 py-1 rounded-sm border-gray-400 border focus:outline-blue-500;
+    @apply px-2 py-1 rounded-lg border-gray-400 border focus:outline-blue-500;
   }
 }
