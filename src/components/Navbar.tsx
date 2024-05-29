@@ -10,6 +10,9 @@ const Navbar: React.FC = () => {
     setIsOpen(!isOpen);
   };
 
+  const ClassLink =
+    "py-2 md:py-0 hover:scale-110 hover:-translate-x-2 md:hover:translate-x-0 transition-all duration-100";
+
   return (
     <section className="z-20 fixed px-10 py-5 w-full flex justify-between items-center text-lg text-white">
       <Link to="/" className="hover:scale-110 transition-all duration-100">
@@ -21,34 +24,22 @@ const Navbar: React.FC = () => {
         </div>
       </div>
       <div
-        className={`uppercase animatecss flex gap-10 font-subtitle md:flex ${
+        className={`fixed md:static animatecss flex flex-col md:flex-row font-subtitle gap-5 md:gap-10 top-0 right-0 pt-16 pl-16 pr-10 h-full md:h-auto text-right w-fit md:w-auto bg-slate-800 bg-opacity-95 md:bg-transparent p-5 md:p-0 ${
           isOpen
             ? "flex animatecss-fadeInRightBig"
             : "animatecss-fadeOutRightBig md:animate-none"
-        } flex-col md:flex-row fixed md:static top-0 right-0 pt-20 pl-16 pr-10 h-full md:h-auto text-right w-fit md:w-auto bg-classicBlue bg-opacity-95 md:bg-transparent p-5 md:p-0`}
+        }`}
       >
-        <Link
-          to="/our-team"
-          className="py-2 md:py-0 hover:scale-110 transition-all duration-100"
-        >
+        <Link to="/our-team" className={ClassLink}>
           Our Team
         </Link>
-        <Link
-          to="/services"
-          className="py-2 md:py-0 hover:scale-110 transition-all duration-100"
-        >
+        <Link to="/services" className={ClassLink}>
           Services
         </Link>
-        <Link
-          to="/reviews"
-          className="py-2 md:py-0 hover:scale-110 transition-all duration-100"
-        >
+        <Link to="/reviews" className={ClassLink}>
           Reviews
         </Link>
-        <Link
-          to="/free-estimate"
-          className="py-2 md:py-0 hover:scale-110 transition-all duration-100"
-        >
+        <Link to="/free-estimate" className={ClassLink}>
           Free Estimate
         </Link>
       </div>
