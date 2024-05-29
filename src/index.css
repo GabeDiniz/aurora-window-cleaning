@@ -11,6 +11,9 @@ h1 {
   font-style: normal;
 }
 
+h2 {
+}
+
 @layer base {
   button {
     @apply px-8 py-2 rounded-md border-black border-2 hover:bg-classicBlue hover:border-classicBlue hover:text-white transition ease-in-out duration-300;
