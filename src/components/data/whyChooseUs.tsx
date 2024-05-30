@@ -12,7 +12,7 @@ const whyChooseUs = [
   {
     title: "Detailed Estimate Process",
     content:
-      "We thoroughly estimate every project and explain how your job will be done. This way you know exactly what to expect on the day of your project.",
+      "We provide detailed estimates and clearly outline the process, ensuring you know exactly what to expect on the day of.",
   },
 ];
 
