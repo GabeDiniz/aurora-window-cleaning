@@ -11,7 +11,7 @@ const TeamSection: React.FC = () => {
         />
         <div className="m-2">
           <h1 className="text-4xl">Eric Faro</h1>
-          <p>
+          <p className="pl-1">
             Hi, my name is Eric, and I am the owner of Newmarket Student Window
             Cleaning. I graduated with a Mechanical Engineering degree from
             Western University. I was born in Brazil and moved here when I was
@@ -24,9 +24,9 @@ const TeamSection: React.FC = () => {
         </div>
       </div>
       <div className="flex gap-10 max-w-5xl">
-        <div className="m-2">
+        <div className="m-2 text-right">
           <h1 className="text-4xl">Student Works</h1>
-          <p>
+          <p className="pr-1">
             Student Works as a franchise has been providing homeowners with
             quality home services across Eastern Canada since 1981. Student
             Works helps young students and entrepreneurs take on owning and
@@ -50,7 +50,7 @@ const TeamSection: React.FC = () => {
         />
         <div className="m-2">
           <h1 className="text-4xl">Multiple Sclerosis (MS Canada)</h1>
-          <p>
+          <p className="pl-1">
             Canada has one of the highest rates of Multiple Sclerosis (MS) in
             the world. Approximately 90000 Canadians are living with MS. That is
             why we donate a percentage of each job we complete to the MS Society

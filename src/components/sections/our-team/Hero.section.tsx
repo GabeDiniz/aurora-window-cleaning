@@ -13,7 +13,7 @@ const OurTeamHero: React.FC = () => {
         <h1 className="text-7xl uppercase animatecss animatecss-bounce">
           Meet our Team
         </h1>
-        <p className="max-w-2xl">
+        <p className="max-w-2xl pl-2">
           Welcome to Aurora Student Window Cleaning! We are a hardworking and
           dedicated team of students operating in Aurora. Your satisfaction is
           our number one priority. From start to finish we want to ensure that
