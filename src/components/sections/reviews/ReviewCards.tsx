@@ -1,11 +1,24 @@
+import { reviewsData } from "@data";
+
 const ReviewCards: React.FC = () => {
   return (
-    <section className="relative h-2/3 flex justify-start items-center">
-      <div className="absolute w-full h-full bg-black bg-opacity-70" />
-      <div className="z-10 flex flex-col w-full items-center gap-5 text-white px-10">
-        <h1 className="text-7xl uppercase animatecss animatecss-bounce">
-          Reviews
-        </h1>
+    <section className="relative bg-laceWhite flex justify-center">
+      <div className="flex flex-wrap justify-center gap-5 px-10 py-10 max-w-7xl">
+        {/* MAP EACH CARD */}
+        {reviewsData.map((review, index) => {
+          return (
+            <div
+              className="bg-gray-300 p-5 rounded-xl w-80 flex flex-col gap-4"
+              key={index}
+            >
+              <div className="flex items-center gap-5">
+                <img className="rounded-full w-12 h-12" src={review.image} />
+                <h3 className="text-lg font-bold">{review.name}</h3>
+              </div>
+              <p>{review.review}</p>
+            </div>
+          );
+        })}
       </div>
     </section>
   );
