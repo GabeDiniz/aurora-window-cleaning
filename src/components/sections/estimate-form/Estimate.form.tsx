@@ -69,15 +69,15 @@ const EstimateForm: React.FC = () => {
   return (
     <section className="relative">
       {/* Background to fill to space out Footer */}
-      <div className="bg-classicBlue h-52" />
+      <div className="bg-classicBlue h-[31rem] lg:h-52" />
       <form
         onSubmit={handleSubmit}
-        className="bg-offLaceWhite space-y-4 w-fit p-10 rounded-lg absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+        className="bg-offLaceWhite space-y-4 w-full lg:w-fit p-10 rounded-lg absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-32 lg:-translate-y-1/2"
       >
         <h1 className="text-xl">
           Enter your information to schedule an estimate
         </h1>
-        <div className="flex gap-3">
+        <div className="flex flex-col lg:flex-row gap-3">
           <input
             type="text"
             name="firstName"
@@ -95,7 +95,7 @@ const EstimateForm: React.FC = () => {
             className="inputClass"
           />
         </div>
-        <div className="flex gap-3">
+        <div className="flex flex-col lg:flex-row gap-3">
           <input
             type="text"
             name="address"
@@ -129,7 +129,7 @@ const EstimateForm: React.FC = () => {
             className="inputClass"
           />
         </div>
-        <div className="flex gap-3">
+        <div className="flex flex-col lg:flex-row gap-3">
           <input
             type="tel"
             name="phoneNumber"

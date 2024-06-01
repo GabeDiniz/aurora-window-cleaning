@@ -9,7 +9,7 @@ const EstimateHeader: React.FC = () => {
         alt="Hero"
       />
       <div className="absolute w-full h-full bg-black bg-opacity-70" />
-      <div className="z-10 text-white max-w-5xl flex flex-col gap-3 text-center py-20 md:py-0 px-10 md:px-0 md:justify-center">
+      <div className="z-10 text-white max-w-5xl flex flex-col gap-3 text-center py-20 md:py-0 px-10 sm:px-4 justify-center">
         <h1 className="text-5xl md:text-7xl  uppercase animatecss animatecss-bounce">
           Book your free estimate!
         </h1>
