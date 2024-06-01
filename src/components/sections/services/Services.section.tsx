@@ -18,7 +18,7 @@ const Services: React.FC = () => {
                 {product.data.map((item, index) => {
                   return (
                     <div
-                      className="flex flex-col justify-center gap-3"
+                      className="flex flex-col justify-center gap-3 flex-shrink"
                       key={index}
                     >
                       <img src={item.banner} className="w-full rounded-md" />
