@@ -37,6 +37,7 @@ export { Services } from "./sections/services/Services.section";
  *
  */
 export { ReviewsHero } from "./sections/reviews/Hero.section";
+export { ReviewCards } from "./sections/reviews/ReviewCards";
 
 /*
  *
