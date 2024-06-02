@@ -17,7 +17,7 @@ const BookingSection: React.FC = () => {
         </Link>
       </div>
       <img
-        className="w-full sm:w-1/3 lg:w-1/4 object-cover rounded-lg"
+        className="w-full sm:w-1/3 lg:w-1/4 object-cover rounded-lg drop-shadow-lg"
         src={HeroImage}
       />
     </section>

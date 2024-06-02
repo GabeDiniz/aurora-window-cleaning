@@ -21,7 +21,10 @@ const Services: React.FC = () => {
                       className="flex flex-col justify-center gap-3 flex-shrink"
                       key={index}
                     >
-                      <img src={item.banner} className="w-full rounded-md" />
+                      <img
+                        src={item.banner}
+                        className="w-full rounded-md drop-shadow-md"
+                      />
                       <h2 className="text-base font-bold">{item.subtitle}</h2>
                       <p className="text-sm font-thin">{item.subtext}</p>
                     </div>

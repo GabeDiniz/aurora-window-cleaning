@@ -5,7 +5,7 @@ const TeamSection: React.FC = () => {
     <section className="relative py-20 px-16 flex flex-col gap-20 justify-start items-center bg-laceWhite text-black">
       <div className="flex gap-10 max-w-5xl">
         <img
-          className="w-1/3 object-cover rounded-lg"
+          className="w-1/3 object-cover rounded-lg drop-shadow-lg"
           src={HeroImage}
           alt="Hero"
         />
@@ -37,14 +37,14 @@ const TeamSection: React.FC = () => {
           </p>
         </div>
         <img
-          className="w-1/3 object-cover rounded-lg"
+          className="w-1/3 object-cover rounded-lg drop-shadow-lg"
           src={HeroImage}
           alt="Hero"
         />
       </div>
       <div className="flex gap-10 max-w-5xl">
         <img
-          className="w-1/3 object-cover rounded-lg"
+          className="w-1/3 object-cover rounded-lg drop-shadow-lg"
           src={HeroImage}
           alt="Hero"
         />

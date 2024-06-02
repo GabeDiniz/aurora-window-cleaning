@@ -8,7 +8,7 @@ const ReviewCards: React.FC = () => {
         {reviewsData.map((review, index) => {
           return (
             <div
-              className="bg-gray-300 p-5 rounded-xl w-80 flex flex-col gap-4"
+              className="bg-gray-300 p-5 rounded-xl w-80 flex flex-col gap-4 drop-shadow-lg"
               key={index}
             >
               <div className="flex items-center gap-5">
