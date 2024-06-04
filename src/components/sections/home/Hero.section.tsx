@@ -1,4 +1,5 @@
 import { HeroImage } from "@assets";
+import { CiMail } from "react-icons/ci";
 
 const HeroSection: React.FC = () => {
   return (
@@ -13,7 +14,10 @@ const HeroSection: React.FC = () => {
           Student<strong>Works</strong> Cleaning
         </h1>
 
-        <button className="border-white">Contact Us</button>
+        <button className="border-white flex items-center gap-2">
+          <CiMail size={25} />
+          Contact Us
+        </button>
       </div>
     </section>
   );
