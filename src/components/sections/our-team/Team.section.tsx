@@ -1,14 +1,15 @@
-import { HeroImage } from "@assets";
+import { Eric1, HeroImage } from "@assets";
 
 const TeamSection: React.FC = () => {
-  const infoClass = "flex flex-col md:flex-row gap-2 md:gap-10 max-w-5xl";
+  const infoClass =
+    "flex flex-col items-center md:flex-row gap-2 md:gap-10 max-w-5xl";
 
   return (
     <section className="relative py-20 px-16 flex flex-col gap-20 justify-start items-center bg-laceWhite text-black">
       <div className={`${infoClass}`}>
         <img
-          className="w-full md:w-1/3 object-cover rounded-lg drop-shadow-lg"
-          src={HeroImage}
+          className="w-full h-64 md:w-1/3 object-cover rounded-lg drop-shadow-lg"
+          src={Eric1}
           alt="Hero"
         />
         <div className="m-2">
