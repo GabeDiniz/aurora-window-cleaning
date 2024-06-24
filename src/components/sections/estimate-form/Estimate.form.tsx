@@ -72,7 +72,7 @@ const EstimateForm: React.FC = () => {
       <div className="bg-classicBlue h-[31rem] lg:h-52" />
       <form
         onSubmit={handleSubmit}
-        className="bg-offLaceWhite space-y-4 w-full lg:w-fit p-10 rounded-lg absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-32 lg:-translate-y-1/2"
+        className="bg-offLaceWhite space-y-4 w-full lg:w-fit p-10 rounded-lg z-10 absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-32 lg:-translate-y-1/2"
       >
         <h1 className="text-xl">
           Enter your information to schedule an estimate
