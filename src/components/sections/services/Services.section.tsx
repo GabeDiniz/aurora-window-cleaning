@@ -12,8 +12,10 @@ const Services: React.FC = () => {
               className="text-3xl flex flex-col gap-2 mb-10 justify-center items-center"
               key={index}
             >
-              <h1 className="font-bold uppercase">{product.title}</h1>
-              <div className="flex gap-5 mx-10 items-start">
+              <h1 className="font-bold uppercase text-center">
+                {product.title}
+              </h1>
+              <div className="flex flex-wrap sm:flex-nowrap gap-10 md:gap-5 mx-10 items-start max-w-7xl">
                 {/* MAP EACH SERVICE SECTION DATA */}
                 {product.data.map((item, index) => {
                   return (
@@ -25,7 +27,7 @@ const Services: React.FC = () => {
                         src={item.banner}
                         className="w-full rounded-md drop-shadow-md"
                       />
-                      <h2 className="text-base ">{item.subtitle}</h2>
+                      <h2 className="text-base">{item.subtitle}</h2>
                       <p className="text-sm font-thin">{item.subtext}</p>
                     </div>
                   );
