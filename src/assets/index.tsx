@@ -13,16 +13,16 @@ export { HeroImage, Eric1 };
  * Services
  *
  */
-import ExtEaves from "./services/ext-eaves.jpeg";
-import GutterGuard from "./services/gutter-guard.png";
-import IntEaves from "./services/int-eaves.jpg";
-import IntWindowCleaningBetter from "./services/int-window-cleaning-Better.png";
-import IntWindowCleaning from "./services/int-window-cleaning.png";
-import windowCleaning from "./services/window-cleaning.jpeg";
-import PolySanding from "./services/poly-sanding.png";
-import PressureWashing from "./services/pressure-washing.png";
-import RainX from "./services/rainx-application.jpg";
-import SealingBeforeAfter from "./services/sealing-before-after.webp";
+import ExtEaves from "./Services/ext-eaves.jpeg";
+import GutterGuard from "./Services/gutter-guard.png";
+import IntEaves from "./Services/int-eaves.jpg";
+import IntWindowCleaningBetter from "./Services/int-window-cleaning-Better.png";
+import IntWindowCleaning from "./Services/int-window-cleaning.png";
+import windowCleaning from "./Services/window-cleaning.jpeg";
+import PolySanding from "./Services/poly-sanding.png";
+import PressureWashing from "./Services/pressure-washing.png";
+import RainX from "./Services/rainx-application.jpg";
+import SealingBeforeAfter from "./Services/sealing-before-after.webp";
 
 export {
   ExtEaves,
