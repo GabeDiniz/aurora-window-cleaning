@@ -20,12 +20,12 @@ const Services: React.FC = () => {
                 {product.data.map((item, index) => {
                   return (
                     <div
-                      className="flex flex-col justify-center gap-3 flex-shrink"
+                      className="flex flex-col justify-center w-full gap-3 flex-shrink"
                       key={index}
                     >
                       <img
                         src={item.banner}
-                        className="w-full rounded-md drop-shadow-md"
+                        className="h-72 sm:h-80 object-cover rounded-md drop-shadow-md"
                       />
                       <h2 className="text-base">{item.subtitle}</h2>
                       <p className="text-sm font-thin">{item.subtext}</p>
