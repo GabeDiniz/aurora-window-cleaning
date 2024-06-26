@@ -1,6 +1,6 @@
 import {
   windowCleaning,
-  IntWindowCleaningBetter,
+  IntWindowCleaning,
   RainX,
   IntEaves,
   ExtEaves,
@@ -8,7 +8,6 @@ import {
   PressureWashing,
   PolySanding,
   SealingBeforeAfter,
-  HeroImage,
 } from "@assets";
 
 const servicesData = [
@@ -22,7 +21,7 @@ const servicesData = [
           "All of our window cleaning is done by hand. Exterior cleaning includes the complete cleaning of all window panes, frames, and sills. ",
       },
       {
-        banner: IntWindowCleaningBetter,
+        banner: IntWindowCleaning,
         subtitle: "Interior cleaning",
         subtext:
           "Interior window cleaning includes cleaning of the window panes, frames, sills, screens, tracts, and opening mechanisms. ",
