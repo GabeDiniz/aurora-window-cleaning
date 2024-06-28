@@ -13,7 +13,6 @@ const Navbar: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      console.log(isOpen);
       if (window.scrollY > 100 && !isOpen) {
         setHasScrolled(true);
       } else {
@@ -33,7 +32,7 @@ const Navbar: React.FC = () => {
   return (
     <section
       className={`z-30 fixed px-10 py-5 w-full flex justify-between items-center text-lg text-white transition-all duration-300 ${
-        hasScrolled ? "bg-white bg-opacity-30 backdrop-blur-md" : ""
+        hasScrolled ? "bg-classicBlue bg-opacity-50 backdrop-blur-md" : ""
       }`}
     >
       <Link to="/" className="hover:scale-110 transition-all duration-100">
