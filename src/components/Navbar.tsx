@@ -1,20 +1,40 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaXmark } from "react-icons/fa6";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [hasScrolled, setHasScrolled] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setHasScrolled(true);
+      } else {
+        setHasScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const ClassLink =
     "navbar uppercase py-2 md:py-0 hover:scale-110 hover:-translate-x-2 md:hover:translate-x-0 transition-all duration-100";
 
   return (
-    <section className="z-20 fixed px-10 py-5 w-full flex justify-between items-center text-lg text-white">
+    <section
+      className={`z-20 fixed px-10 py-5 w-full flex justify-between items-center text-lg text-white transition-all duration-300 ${
+        hasScrolled ? "bg-white bg-opacity-30 backdrop-blur-md" : ""
+      }`}
+    >
       <Link to="/" className="hover:scale-110 transition-all duration-100">
         Student<strong>Works</strong>
       </Link>
