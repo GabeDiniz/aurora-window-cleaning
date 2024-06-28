@@ -13,7 +13,8 @@ const Navbar: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
+      console.log(isOpen);
+      if (window.scrollY > 100 && !isOpen) {
         setHasScrolled(true);
       } else {
         setHasScrolled(false);
@@ -24,14 +25,14 @@ const Navbar: React.FC = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [isOpen]);
 
   const ClassLink =
     "navbar uppercase py-2 md:py-0 hover:scale-110 hover:-translate-x-2 md:hover:translate-x-0 transition-all duration-100";
 
   return (
     <section
-      className={`z-20 fixed px-10 py-5 w-full flex justify-between items-center text-lg text-white transition-all duration-300 ${
+      className={`z-30 fixed px-10 py-5 w-full flex justify-between items-center text-lg text-white transition-all duration-300 ${
         hasScrolled ? "bg-white bg-opacity-30 backdrop-blur-md" : ""
       }`}
     >
