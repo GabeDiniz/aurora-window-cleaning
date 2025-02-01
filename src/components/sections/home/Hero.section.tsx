@@ -14,7 +14,7 @@ const HeroSection: React.FC = () => {
           Student<strong>Works</strong> Cleaning
         </h1>
 
-        <button className="border-white flex items-center gap-2">
+        <button className="border-white flex justify-center items-stretch gap-2">
           <CiMail size={25} />
           Contact Us
         </button>
